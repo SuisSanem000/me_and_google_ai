@@ -29,23 +29,47 @@ Knowing the raw API first means you're never blindly trusting the abstraction.
 
 ## Setup
 
-```bash
-# From repo root — copy template and fill in your keys
+From the repository root (`d:\projects\me_and_google_ai`), initialize the project environment and run the scripts:
+
+### 1. Configure Secrets
+Copy the template and fill in your keys:
+```powershell
 cp .env.example .env
+```
+Open the new `.env` file and set `GEMINI_API_KEY` (and `OPENAI_API_KEY` if you have one).
 
-# Create venv and install
+### 2. Set Up Virtual Environment
+Create and activate a Python virtual environment:
+```powershell
+# Create venv
 python -m venv .venv
-.venv\Scripts\activate        # Windows
-# source .venv/bin/activate   # macOS/Linux
 
+# Activate (Windows)
+.venv\Scripts\activate
+
+# Activate (macOS/Linux)
+# source .venv/bin/activate
+```
+
+### 3. Install Dependencies & Run
+You can install dependencies and run the scripts directly from the repository root:
+
+```powershell
+# Install requirements
+pip install -r phase-1-python-foundations/day01-hello-gemini/requirements.txt
+
+# Run the comparative runner
+python phase-1-python-foundations/day01-hello-gemini/main.py
+
+# Or run the raw Gemini script
+python phase-1-python-foundations/day01-hello-gemini/hello_gemini.py
+```
+
+Alternatively, you can navigate into the Day 1 directory first:
+```powershell
+cd phase-1-python-foundations/day01-hello-gemini
 pip install -r requirements.txt
-
-# Run the comparison
 python main.py
-
-# Or run individually
-python hello_gemini.py
-python hello_openai.py
 ```
 
 ## Expected Output

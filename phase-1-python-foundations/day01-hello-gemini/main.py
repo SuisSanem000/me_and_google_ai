@@ -16,17 +16,27 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ── Clients ────────────────────────────────────────────────────────────────────
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-gemini_model = genai.GenerativeModel(
-    model_name="gemini-2.0-flash",
-    system_instruction="You are a concise technical explainer. Use bullet points.",
-)
-openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+gemini_key = os.getenv("GEMINI_API_KEY")
+openai_key = os.getenv("OPENAI_API_KEY")
+
+if gemini_key:
+    genai.configure(api_key=gemini_key)
+    gemini_model = genai.GenerativeModel(
+        model_name="gemini-2.0-flash",
+        system_instruction="You are a concise technical explainer. Use bullet points.",
+    )
+else:
+    gemini_model = None
+
+if openai_key:
+    openai_client = OpenAI(api_key=openai_key)
+else:
+    openai_client = None
 
 SYSTEM = "You are a concise technical explainer. Use bullet points."
 PROMPT = "What is an LLM? Explain in exactly 3 bullet points."
 
-DIVIDER = "─" * 60
+DIVIDER = "-" * 60
 
 
 def call_gemini(prompt: str) -> dict:
@@ -58,21 +68,43 @@ def call_openai(prompt: str) -> dict:
 
 if __name__ == "__main__":
     print(f"\nPrompt: {PROMPT}\n")
-    print(DIVIDER)
 
-    gemini = call_gemini(PROMPT)
-    print(f"🔵 Gemini 2.0 Flash  [{gemini['latency_s']}s | {gemini['tokens']} tokens]")
-    print(DIVIDER)
-    print(gemini["text"])
+    gemini_success = False
+    openai_success = False
 
-    print(DIVIDER)
+    gemini = None
+    gpt = None
 
-    gpt = call_openai(PROMPT)
-    print(f"🟢 GPT-4o-mini       [{gpt['latency_s']}s | {gpt['tokens']} tokens]")
-    print(DIVIDER)
-    print(gpt["text"])
+    if gemini_model:
+        print(DIVIDER)
+        try:
+            gemini = call_gemini(PROMPT)
+            print(f"[Gemini 2.0 Flash]  [{gemini['latency_s']}s | {gemini['tokens']} tokens]")
+            print(DIVIDER)
+            print(gemini["text"])
+            gemini_success = True
+        except Exception as e:
+            print(f"x Gemini Error: {e}")
+    else:
+        print("o Gemini API Key not configured. Skipping Gemini.")
 
-    print(DIVIDER)
-    print(f"\n📊 Comparison")
-    print(f"   Latency  — Gemini: {gemini['latency_s']}s | OpenAI: {gpt['latency_s']}s")
-    print(f"   Tokens   — Gemini: {gemini['tokens']} | OpenAI: {gpt['tokens']}")
+    if openai_client:
+        print(DIVIDER)
+        try:
+            gpt = call_openai(PROMPT)
+            print(f"[GPT-4o-mini]       [{gpt['latency_s']}s | {gpt['tokens']} tokens]")
+            print(DIVIDER)
+            print(gpt["text"])
+            openai_success = True
+        except Exception as e:
+            print(f"x OpenAI Error: {e}")
+    else:
+        print("o OpenAI API Key not configured. Skipping OpenAI.")
+
+    if gemini_success and openai_success:
+        print(DIVIDER)
+        print(f"\n=== Comparison ===")
+        print(f"   Latency  - Gemini: {gemini['latency_s']}s | OpenAI: {gpt['latency_s']}s")
+        print(f"   Tokens   - Gemini: {gemini['tokens']} | OpenAI: {gpt['tokens']}")
+
+
