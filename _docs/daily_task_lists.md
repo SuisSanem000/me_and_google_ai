@@ -8,27 +8,27 @@
 
 ---
 
-### Day 1 — Environment Setup + First Gemini Call
+### Day 1 (2026-06-13) — Environment Setup + First Gemini Call
 
-- [ ] Install Python 3.11+
-- [ ] Install VS Code
-- [ ] Install `pip` and set up `venv`
-- [ ] Go to [Google AI Studio](https://aistudio.google.com/) and get your Gemini API key
-- [ ] Read [What is an LLM?](https://www.cloudflare.com/learning/ai/what-is-a-large-language-model/) (~30 min)
-- [ ] Read [What is a token?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) (~15 min)
-- [ ] Create a GitHub repo named `ai-engineering-journey`
-- [ ] Create a Python virtual environment inside the repo
-- [ ] Run `pip install google-generativeai python-dotenv openai`
-- [ ] Create a `.env` file and store your Gemini API key in it
-- [ ] Write `hello_gemini.py` — call the Gemini API with any prompt, print the response
-- [ ] Load the `.env` key using `python-dotenv` in your script
+- [x] Install Python 3.11+
+- [x] Install VS Code
+- [x] Install `pip` and set up `venv`
+- [x] Go to [Google AI Studio](https://aistudio.google.com/) and get your Gemini API key
+- [/] Read [What is an LLM?](https://www.cloudflare.com/learning/ai/what-is-a-large-language-model/) (~30 min)
+- [/] Read [What is a token?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) (~15 min)
+- [x] Create a GitHub repo named `ai-engineering-journey`
+- [x] Create a Python virtual environment inside the repo
+- [x] Run `pip install google-generativeai python-dotenv openai`
+- [x] Create a `.env` file and store your Gemini API key in it
+- [x] Write `hello_gemini.py` — call the Gemini API with any prompt, print the response
+- [x] Load the `.env` key using `python-dotenv` in your script
 - [ ] Sign up for a free [OpenAI API account](https://platform.openai.com/) (even $5 credits is enough)
-- [ ] Write a basic README for the repo
-- [ ] Push everything to GitHub
+- [x] Write a basic README for the repo
+- [x] Push everything to GitHub
 
 ---
 
-### Day 2 — NumPy + Embeddings from Scratch
+### Day 2 (2026-06-14) — NumPy + Embeddings from Scratch
 
 - [ ] Open [Kaggle Pandas course](https://www.kaggle.com/learn/pandas) and complete lessons 1–3 (DataFrames, indexing, summary functions)
 - [ ] Watch [What are Embeddings? — Josh Starmer (12 min)](https://www.youtube.com/watch?v=viZrOnJclY0)
@@ -40,7 +40,7 @@
 
 ---
 
-### Day 3 — Pandas + ML Vocabulary
+### Day 3 (2026-06-15) — Pandas + ML Vocabulary
 
 - [ ] Open [Kaggle Pandas course](https://www.kaggle.com/learn/pandas) and complete the remaining lessons
 - [ ] Open [Kaggle Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) and complete lessons 1–4 only
@@ -56,7 +56,7 @@
 
 ---
 
-### Day 4 — Prompt Engineering Fundamentals
+### Day 4 (2026-06-16) — Prompt Engineering Fundamentals
 
 - [ ] Open [DL.AI: Prompt Engineering for Developers](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng) and complete the full course (~1.5h)
 - [ ] Understand these patterns: zero-shot, few-shot, chain-of-thought, JSON/structured output
@@ -72,7 +72,7 @@
 
 ---
 
-### Day 5 — Multi-Step LLM Pipelines
+### Day 5 (2026-06-17) — Multi-Step LLM Pipelines
 
 - [ ] Open [DL.AI: Building Systems with the ChatGPT API](https://learn.deeplearning.ai/courses/chatgpt-building-system) and complete the full course (~2h)
 - [ ] Understand: classification chains, multi-step pipelines, moderation layers
@@ -87,7 +87,7 @@
 
 ---
 
-### Day 6 — Hugging Face + Certificates + LinkedIn
+### Day 6 (2026-06-18) — Hugging Face + Certificates + LinkedIn
 
 - [ ] Open [Hugging Face NLP Course — Chapter 1](https://huggingface.co/learn/nlp-course/chapter1/1) and complete it (~1h)
 - [ ] Open [Hugging Face NLP Course — Chapter 2](https://huggingface.co/learn/nlp-course/chapter2/1) and complete it (~1h)
@@ -111,7 +111,7 @@
 
 ---
 
-### Day 7 — LangChain Foundations Part 1
+### Day 7 (2026-06-19) — LangChain Foundations Part 1
 
 - [ ] Open [LangChain Academy: Introduction to LangChain](https://academy.langchain.com/courses/intro-to-langchain) and complete Modules 1–2
 - [ ] Understand the LCEL mental model: `prompt | model | parser`
@@ -126,7 +126,7 @@
 
 ---
 
-### Day 8 — LangChain + Pydantic Structured Outputs
+### Day 8 (2026-06-20) — LangChain + Pydantic Structured Outputs
 
 - [ ] Open [LangChain Academy: Introduction to LangChain](https://academy.langchain.com/courses/intro-to-langchain) and complete Modules 3–4
 - [ ] Understand: Pydantic output parsers, conversation memory, `with_structured_output()`
@@ -141,7 +141,7 @@
 
 ---
 
-### Day 9 — LangChain Complete + Memory Chatbot
+### Day 9 (2026-06-21) — LangChain Complete + Memory Chatbot
 
 - [ ] Open [LangChain Academy: Introduction to LangChain](https://academy.langchain.com/courses/intro-to-langchain) and complete all remaining modules
 - [ ] Claim your **LangChain Academy: Introduction to LangChain certificate**
@@ -154,7 +154,7 @@
 
 ---
 
-### Day 10 — RAG Part 1: Document Loading & Chunking
+### Day 10 (2026-06-22) — RAG Part 1: Document Loading & Chunking
 
 - [ ] Open [DL.AI: Chat with Your Data](https://learn.deeplearning.ai/courses/langchain-chat-with-your-data) and complete Modules 1–3
 - [ ] Understand: Document loaders, `RecursiveCharacterTextSplitter`, chunk size vs. overlap
@@ -168,7 +168,7 @@
 
 ---
 
-### Day 11 — RAG Part 2: Embeddings + Vector Store
+### Day 11 (2026-06-23) — RAG Part 2: Embeddings + Vector Store
 
 - [ ] Open [DL.AI: Chat with Your Data](https://learn.deeplearning.ai/courses/langchain-chat-with-your-data) and complete Modules 4–5
 - [ ] Understand: similarity search, MMR retrieval, metadata filtering
@@ -181,7 +181,7 @@
 
 ---
 
-### Day 12 — RAG Part 3: Full Pipeline (Flagship Project ⭐)
+### Day 12 (2026-06-24) — RAG Part 3: Full Pipeline (Flagship Project ⭐)
 
 - [ ] Open [DL.AI: Chat with Your Data](https://learn.deeplearning.ai/courses/langchain-chat-with-your-data) and complete Module 6
 - [ ] Claim your **DL.AI "Chat with Your Data" certificate**
@@ -196,7 +196,7 @@
 
 ---
 
-### Day 13 — RAG Evaluation with RAGAS
+### Day 13 (2026-06-25) — RAG Evaluation with RAGAS
 
 - [ ] Open [DL.AI: Building & Evaluating Advanced RAG](https://learn.deeplearning.ai/courses/building-evaluating-advanced-rag) and complete the full course (~2h)
 - [ ] Understand these RAGAS metrics: Faithfulness, Answer Relevancy, Context Recall
@@ -210,7 +210,7 @@
 
 ---
 
-### Day 14 — Advanced RAG: Cloud Vector DB + Better Retrieval
+### Day 14 (2026-06-26) — Advanced RAG: Cloud Vector DB + Better Retrieval
 
 - [ ] Open [DL.AI: Advanced Retrieval for AI with Chroma](https://learn.deeplearning.ai/courses/advanced-retrieval-for-ai) and complete the full course (~2h)
 - [ ] Understand these patterns: HyDE, multi-query retrieval, contextual compression, reranking
@@ -225,7 +225,7 @@
 
 ---
 
-### Day 15 — RAG README + LinkedIn Post
+### Day 15 (2026-06-27) — RAG README + LinkedIn Post
 
 - [ ] Open your `day12-rag-chatbot` README and write a clear problem statement
 - [ ] Draw and add an architecture diagram using Mermaid syntax
@@ -241,7 +241,7 @@
 
 ---
 
-### Day 16 — FastAPI: Serve Your RAG as a REST API
+### Day 16 (2026-06-28) — FastAPI: Serve Your RAG as a REST API
 
 - [ ] Read [FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/) — focus on: path operations, request bodies, async endpoints, background tasks, StreamingResponse
 - [ ] Understand: why `async/await` matters for LLM APIs (non-blocking = handles multiple users)
@@ -264,7 +264,7 @@
 
 ---
 
-### Day 17 — LangGraph Foundations Part 1
+### Day 17 (2026-06-29) — LangGraph Foundations Part 1
 
 - [ ] Open [LangChain Academy: Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph) and complete Modules 1–2
 - [ ] Understand: nodes = Python functions, edges = routing logic, state = shared TypedDict
@@ -281,7 +281,7 @@
 
 ---
 
-### Day 18 — LangGraph Agents + Tool Calling
+### Day 18 (2026-06-30) — LangGraph Agents + Tool Calling
 
 - [ ] Open [LangChain Academy: Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph) and complete Modules 3–4
 - [ ] Open [DL.AI: Functions, Tools & Agents](https://learn.deeplearning.ai/courses/functions-tools-agents-langchain) and complete the first half (~1.5h)
@@ -298,7 +298,7 @@
 
 ---
 
-### Day 19 — Advanced Agents + Human-in-the-Loop
+### Day 19 (2026-07-01) — Advanced Agents + Human-in-the-Loop
 
 - [ ] Open [LangChain Academy: Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph) and complete all remaining modules
 - [ ] Claim your **LangChain Academy: Intro to LangGraph certificate**
@@ -313,7 +313,7 @@
 
 ---
 
-### Day 20 — LLMOps: LangSmith Tracing
+### Day 20 (2026-07-02) — LLMOps: LangSmith Tracing
 
 - [ ] Open [DL.AI: LLMOps](https://learn.deeplearning.ai/courses/llmops) and complete the full course (~2h)
 - [ ] Sign up for a free [LangSmith account](https://smith.langchain.com)
@@ -329,7 +329,7 @@
 
 ---
 
-### Day 21 — Google AI Studio Deep Dive
+### Day 21 (2026-07-03) — Google AI Studio Deep Dive
 
 - [ ] Go to [Google AI Studio](https://aistudio.google.com/) and explore the UI
 - [ ] Try setting a custom system instruction and see how it changes responses
@@ -347,7 +347,7 @@
 
 ---
 
-### Day 22 — Firebase Genkit (JavaScript) + Web Frontend
+### Day 22 (2026-07-04) — Firebase Genkit (JavaScript) + Web Frontend
 
 - [ ] Read [Firebase Genkit Getting Started (Node.js)](https://firebase.google.com/docs/genkit/get-started)
 - [ ] Understand: Genkit flows = deployable AI functions with tracing and streaming built in
@@ -366,7 +366,7 @@
 
 ---
 
-### Day 23 — Firestore Vector Search + Full-Stack RAG
+### Day 23 (2026-07-05) — Firestore Vector Search + Full-Stack RAG
 
 - [ ] Read [Firestore Vector Search Docs](https://firebase.google.com/docs/firestore/vector-search)
 - [ ] Understand: Firestore supports KNN vector queries natively — no separate vector DB needed
@@ -381,7 +381,7 @@
 
 ---
 
-### Day 24 — Connect Python FastAPI to Web Frontend
+### Day 24 (2026-07-06) — Connect Python FastAPI to Web Frontend
 
 - [ ] Read [CORS in FastAPI](https://fastapi.tiangolo.com/tutorial/cors/)
 - [ ] Open your `day16-rag-fastapi` project
@@ -403,7 +403,7 @@
 
 ---
 
-### Day 25 — Docker Basics + Cloud Run Deployment
+### Day 25 (2026-07-07) — Docker Basics + Cloud Run Deployment
 
 - [ ] Watch [Docker in 100 Seconds — Fireship](https://www.youtube.com/watch?v=Gjnup-PuquQ) (2 min)
 - [ ] Watch [Docker Tutorial for Beginners — TechWorld with Nana](https://www.youtube.com/watch?v=3c-iBn73dDE) (~45 min — watch until "running a container")
@@ -421,7 +421,7 @@
 
 ---
 
-### Day 26 — Google Developer Profile + Certificates
+### Day 26 (2026-07-08) — Google Developer Profile + Certificates
 
 - [ ] Go to [me.developers.google.com](https://me.developers.google.com/) and complete your profile (fill all fields)
 - [ ] Link your GitHub account on the Google Developer Profile
@@ -436,7 +436,7 @@
 
 ---
 
-### Day 27 — GitHub Portfolio Polish
+### Day 27 (2026-07-09) — GitHub Portfolio Polish
 
 - [ ] Go through each project repo from the 30 days
 - [ ] For each repo: write or update the README with a clear problem statement
@@ -452,7 +452,7 @@
 
 ---
 
-### Day 28 — LinkedIn & Personal Branding
+### Day 28 (2026-07-10) — LinkedIn & Personal Branding
 
 - [ ] Update LinkedIn headline to: "AI Application Developer | Python · LangChain · RAG"
 - [ ] Rewrite your LinkedIn About section (see roadmap for exact template)
@@ -467,7 +467,7 @@
 
 ---
 
-### Day 29 — Interview Prep: Talk Through Your Stack
+### Day 29 (2026-07-11) — Interview Prep: Talk Through Your Stack
 
 - [ ] Set a timer and answer out loud: *"What is an embedding? Why is cosine similarity used instead of Euclidean distance for text?"*
 - [ ] Set a timer and answer out loud: *"What is the difference between fine-tuning and RAG? When do you choose each?"*
@@ -491,7 +491,7 @@
 
 ---
 
-### Day 30 — Final Review + Celebration 🎉
+### Day 30 (2026-07-12) — Final Review + Celebration 🎉
 
 - [ ] Do a live demo check: demo your RAG chatbot → FastAPI → deployed Cloud Run URL in under 3 minutes
 - [ ] If anything breaks during the demo, fix it now
