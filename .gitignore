@@ -1,0 +1,46 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ─── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example        # always commit the template, never the real keys
+
+# ─── Data / local DBs ─────────────────────────────────────────────────────────
+chroma_db/
+*.db
+*.sqlite
+
+# ─── Build / dist ─────────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ─── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.user
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Node (Firebase / Genkit project on Day 22) ───────────────────────────────
+node_modules/
+.firebase/
+firebase-debug.log
+
+# ─── Docker ───────────────────────────────────────────────────────────────────
+*.dockerignore
